@@ -8,7 +8,7 @@ module.exports = async (callback) => {
   console.log(`Deploying Democracy Kit, Owner ${process.env.OWNER}`)
 
   if (process.argv.length < 5) {
-    errorOut('Usage: truffle exec --network <network> scripts/deploy.js')
+    console.error('Usage: truffle exec --network <network> scripts/deploy.js')
   }
   // get network
   const network = process.argv[4]
